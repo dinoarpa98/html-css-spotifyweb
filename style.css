@@ -11,6 +11,10 @@
 }
 
 /* aside */
+.bar-top svg{
+    display: none;
+}
+
 
 aside{
     display: flex;
@@ -58,8 +62,7 @@ aside{
 /* colors and settings icons*/
 .bar-top img{
     filter: invert(1);
-    vertical-align: middle;
-
+    
 }
 
 .aside-icon{
@@ -77,12 +80,15 @@ aside{
 
 .bar-topset ul li span{
     color: white;
+    white-space: nowrap;
+    padding: 0 5px;
     display: none;
 }
 
-.bar-top i{
+.bar-top li{
     padding: 5px;
     margin-top: 10px;
+    display: flex;
 }
 
 .fa-bars{
@@ -152,6 +158,11 @@ main{
 
 /* menunav */
 
+.menu-nav a{
+    color: gray;
+    text-decoration: none;
+}
+
 .top-nav{
     color: gray;
     text-align: center;
@@ -206,11 +217,63 @@ main{
 /* footer/player */
 
 footer{
-    border: 3px solid red;
+    
     height: 100px;
     background-color: rgb(59, 58, 58);
     display: flex;
+    width: 100%;
 }
 
-.player-contain
+.player-left{
+    display: flex;
+    width: 120px;
+    justify-content: flex-start;
+    align-items: center;
+}
 
+.player-left img{
+    width: 50px;
+    padding: 5px;
+}
+
+.player-text{
+    color: white;
+    font-size: 12px;
+}
+
+.gray{
+    color: gray;
+}
+
+
+.ico-left{
+    color: white;
+    margin-left: 10px;
+}
+
+
+.player-mid{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.ico-top{
+    color: white;
+}
+
+.ico-top i{
+    margin: 2px;
+}
+
+.player-right{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.ico-right{
+    color: white;
+    display: flex;
+}
