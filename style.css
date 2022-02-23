@@ -6,7 +6,6 @@
 
 .macrocontain{
      background-color: black;
-     border: 1px solid red;
      display: flex;
      height: calc(100vh - 100px);
 }
@@ -42,13 +41,29 @@ aside{
     align-items: center;
 }
 
+/* playlist / display none*/
+
+.playlist{
+    margin-top: 20px;
+    color: white;
+    display: none;
+}
+
+.playlist li{
+    list-style-type: none;
+    margin: 10px;
+}
 
 
 /* colors and settings icons*/
 .bar-top img{
     filter: invert(1);
     vertical-align: middle;
-    
+
+}
+
+.aside-icon{
+    font-size: 15px;
 }
 
 .fa-house{
@@ -59,18 +74,21 @@ aside{
     color: white;
 }
 
+
+.bar-topset ul li span{
+    color: white;
+    display: none;
+}
+
 .bar-top i{
     padding: 5px;
+    margin-top: 10px;
 }
 
 .fa-bars{
     color: white;
 }
 
-.bar-top span{
-    color: white;
-    display: none;
-}
 
 .fa-circle-down{
     color: white;
@@ -85,28 +103,36 @@ aside{
     margin-top: 10px;
 }
 
+.fa-plus{
+    background-color: gray;
+}
+
+
+.bar-bot span{
+    color: white;
+    display: none;
+}
 
 /* header/upgrade */
 
 
 .container{
- border: 1px solid fuchsia;
  width: 100%;
  display: flex;
-flex-direction: column;
+ flex-direction: column;
 }
 
 header{
     color: white;
-    border: 2px solid green;
-    display: flex;
-    justify-content: flex-end;
     background-color: rgba(51, 50, 50, 0.479);
+    position: fixed;
+    width: 100%;
+    position: relative;
+    text-align: right;
 }
 
 .upgrade-container{
-    display: flex;
-    padding: 10px;
+    padding: 20px;
 }
 
 .upgrade-container span{
@@ -114,3 +140,77 @@ header{
      border-radius: 20px;
      padding: 10px;
 }
+
+
+
+
+
+
+main{
+    overflow-y: auto;
+}
+
+/* menunav */
+
+.top-nav{
+    color: gray;
+    text-align: center;
+    padding: 10px;
+}
+
+.top-nav span{
+    padding: 5px;
+}
+
+.bot-nav{
+    color: gray;
+    text-align: center;
+    padding: 10px;
+}
+
+.bot-nav span{
+    padding: 2px;
+}
+
+
+
+
+
+
+/* main/cards */
+.cards-container{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.cards{
+    width: calc(100% / 2);
+    padding: 5px;
+}
+
+.cards img{
+    width: 100%;
+}
+
+.title{
+    color: white;
+    text-align: center ;
+}
+
+.subtitle{
+    color: gray;
+    text-align: center;
+}
+
+/* footer/player */
+
+footer{
+    border: 3px solid red;
+    height: 100px;
+    background-color: rgb(59, 58, 58);
+    display: flex;
+}
+
+.player-contain
+
