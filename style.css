@@ -11,7 +11,7 @@
 }
 
 /* aside */
-.bar-top svg{
+#full-logo{
     display: none;
 }
 
@@ -60,7 +60,7 @@ aside{
 
 
 /* colors and settings icons*/
-.bar-top img{
+#small-logo{
     filter: invert(1);
     
 }
@@ -226,9 +226,9 @@ footer{
 
 .player-left{
     display: flex;
-    width: 120px;
-    justify-content: flex-start;
     align-items: center;
+    padding: 5px;
+    
 }
 
 .player-left img{
@@ -248,7 +248,6 @@ footer{
 
 .ico-left{
     color: white;
-    margin-left: 10px;
 }
 
 
@@ -257,23 +256,195 @@ footer{
     display: flex;
     align-items: center;
     flex-direction: column;
+    justify-content: center;
+    padding: 10px;
 }
 
 .ico-top{
     color: white;
+    padding: 10px;
 }
 
 .ico-top i{
     margin: 2px;
 }
 
+.ico-bot{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 10px;
+}
+
+.repbar{
+    border: 3px solid gray;
+    display: flex;
+    border-radius: 15px;
+    width: 90px;
+    margin: 5px;
+}
+
 .player-right{
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
+    
+}
+
+.player-right i{
+    padding: 5px;
 }
 
 .ico-right{
     color: white;
     display: flex;
+    align-items: center;
+
+}
+
+.fa-volume-high{
+    font-size: 15px;
+}
+
+.repbarright{
+    background-color: gray;
+    border-radius: 15px;
+    width: 50px;
+    height: 5px;
+    display:none;
+}
+
+
+/* media query */
+
+@media screen and (min-width:768px) {
+
+    .cards{
+    width: calc(100% / 2);
+    padding: 5px;
+}
+    
+
+#small-logo{
+    display: none;
+}
+
+#full-logo{
+    display: flex;
+    color: white;
+}
+
+.bar-topset ul li span{
+    color: white;
+    white-space: nowrap;
+    padding: 0 5px;
+    display: flex;
+}
+
+.bar-bot {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.bar-bot span{
+    color: white;
+    display: flex;
+    white-space: nowrap;
+}
+
+.playlist{
+    margin-top: 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    white-space: nowrap;
+    text-align: center;
+}
+
+ .fa-plus{
+     font-size: 25px;
+ }
+
+.player-left{
+  width: 15%;
+}
+
+ .player-mid{
+     font-size: 30px;
+     width: 70%;
+ }
+
+ .player-right{
+     width: 15%;
+ }
+
+ .repbarright{
+     display: flex;
+ }
+}
+
+@media screen and (min-width:1200px){
+
+       .cards{
+    width: calc(100% / 5);
+    padding: 5px;
+}
+    
+
+#small-logo{
+    display: none;
+}
+
+#full-logo{
+    display: flex;
+    color: white;
+}
+
+.bar-topset ul li span{
+    color: white;
+    white-space: nowrap;
+    padding: 0 5px;
+    display: flex;
+}
+
+.bar-bot {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.bar-bot span{
+    color: white;
+    display: flex;
+    white-space: nowrap;
+}
+
+.playlist{
+    margin-top: 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    white-space: nowrap;
+    text-align: center;
+}
+
+ .fa-plus{
+     font-size: 25px;
+ }
+
+.player-left{
+  width: 15%;
+}
+
+ .player-mid{
+     font-size: 30px;
+     width: 70%;
+ }
+
+ .player-right{
+     width: 15%;
+ }
+
+ .repbarright{
+     display: flex;
+ }
+ 
 }
