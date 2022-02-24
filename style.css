@@ -19,6 +19,7 @@
 aside{
     display: flex;
     background-color: black;
+    z-index: 1;
 }
 
 .bar-aside{
@@ -133,8 +134,13 @@ header{
     background-color: rgba(51, 50, 50, 0.479);
     position: fixed;
     width: 100%;
-    position: relative;
+    top: 0;
+    right: 0;
     text-align: right;
+}
+
+header:hover{
+    border: 1px solid black;
 }
 
 .upgrade-container{
@@ -152,36 +158,36 @@ header{
 
 
 
+
 main{
     overflow-y: auto;
+    padding-top: 80px;
 }
 
 /* menunav */
 
-.menu-nav a{
+.menu-nav {
     color: gray;
     text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.top-nav{
+.menu-nav a{
+    text-decoration: none;
     color: gray;
-    text-align: center;
-    padding: 10px;
-}
-
-.top-nav span{
     padding: 5px;
 }
 
 .bot-nav{
-    color: gray;
-    text-align: center;
-    padding: 10px;
+    margin-top: 3px;
 }
 
-.bot-nav span{
-    padding: 2px;
+.menu-nav a:hover{
+    border-bottom: 1px solid greenyellow;
 }
+
 
 
 
@@ -202,6 +208,10 @@ main{
 
 .cards img{
     width: 100%;
+}
+
+.cards img:hover{
+    background-color: rgba(48, 47, 47, 0.404);
 }
 
 .title{
@@ -313,13 +323,25 @@ footer{
     display:none;
 }
 
+/* ANCHOR HOVER */
+ .fa-heart:hover{
+     color: rgba(31, 30, 30, 0.548);
+ }
+
+ .fa-folder:hover{
+     color: rgba(26, 25, 25, 0.616);
+ }
+
+ i:hover{
+     color: rgba(26, 25, 25, 0.616);
+ }
 
 /* media query */
 
 @media screen and (min-width:768px) {
 
     .cards{
-    width: calc(100% / 2);
+    width: calc(100% / 4);
     padding: 5px;
 }
     
@@ -331,6 +353,8 @@ footer{
 #full-logo{
     display: flex;
     color: white;
+    width: 100px;
+    align-items: flex-start;
 }
 
 .bar-topset ul li span{
@@ -385,8 +409,8 @@ footer{
 @media screen and (min-width:1200px){
 
        .cards{
-    width: calc(100% / 5);
-    padding: 5px;
+     width: calc(100% / 6);
+     padding: 5px;
 }
     
 
